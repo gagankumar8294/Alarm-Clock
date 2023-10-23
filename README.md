@@ -1,2 +1,2 @@
 # Alarm-Clock
-Alarm clock designed for Codeaspirant project
+Alarm clock designed for Coding Ninja project
