@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alarm Clock </title>
+
+  <!-- Favicon link -->
+  <link rel = "icon" href = "./static/images/favicon.ico" type = "image/x-icon">
+
+  <!-- Styles css -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body id="body">
+  <div id="app">
+    <section class="alarm_border">
+      <div id="clock-container">  <!-- clock container -->
+        <div id="current-time-container">  <!-- Current time container box -->
+          Current Time<br>
+          <span id="time"></span> <!-- Current time -->
+        </div>
+        <form id="setAlarm-conatiner"> <!-- Set Alarm form -->
+          <div id="set-alarm-field">  <!-- Set Alarm input field -->
+            <input type="number" name="alarm_hour" id="alarm_hour" placeholder="hr" maxlength="2" max="12" min="01" required>
+            <input type="number" name="alarm_min" id="alarm_min" placeholder="min" maxlength="2" max="59" min="00" required>
+            <input type="number" name="alarm_sec" id="alarm_sec" placeholder="sec" maxlength="2" max="59" min="00" required>
+            <select id="meridiem"  class="" required>
+              <option value="Meridiem" selected disabled hidden>Meridiem</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+          <div class="controls"> <!-- Alarm Controls button -->
+            <button type="submit" class="set-alarm"> Set Alarm</button>  <!-- Set Alarm button -->
+            <button type="reset" id="stop-alarm" class="clear-alarm">Stop Ringing</button>  <!-- Stop Ringing button -->
+          </div>
+        </form>
+      </div>
+      <h3 class="container">Alarms</h3> <!-- Heading Alarm list -->
+      <div id="alist-conatiner" class="container "> <!-- Alarm list container -->
+        <ul id="alarm-list"> <!-- Alarm list -->
+        </ul>
+      </div> 
+      
+    </section>
+    <footer> &copy; Copyright 2023 Alarm Designed for Gagan Kumar
+      </footer>
+  </div>
+
+  <!-- Javascript -->
+  <script src="./index.js"></script>
+</body>
+
+</html>

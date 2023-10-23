@@ -1,0 +1,29 @@
+* {
+  /* color: #fff;
+  background-color: black; */
+}
+.alarm_border {
+  border: 1px solid black;
+  background-color: yellow;
+  margin-top: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius: 150px;
+}
+
+#app {
+  text-align: center;
+  height: 100vh;
+}
+
+#clock-container {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  text-align: center; 
+}
+
+.container {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
